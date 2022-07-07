@@ -13,7 +13,8 @@ timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://armytigers.github.io/my-hexo-blog/
+root: /my-hexo-blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -102,7 +103,9 @@ theme: bluelake
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: git
+  repo: https://github.com/ArmyTigers/my-hexo-blog.git
+  branch: master
 
 about:
   photo_url: # 头像的链接地址 e.g. http://cdn.itdn.top/blog/themeauthor.jpg
