@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Activiti6工作流Api文档 | JunHu Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  
+  
+    <link rel="alternate" href="/atom.xml" title="JunHu Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+    
+<link rel="stylesheet" href="/localshare/css/share.css">
+
+  
+  
+  
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">JunHu Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/."><i class="fa fa-home"></i> Home</a>
+        
+          <a class="main-nav-link" href="/archives/"><i class="fa fa-archive"></i> Archive</a>
+        
+          <a class="main-nav-link" href="/about/"><i class="fa fa-user"></i> About</a>
+        
+          <a class="main-nav-link" href="/atom.xml"><i class="fa fa-rss"></i> RSS</a>
+        
+      </nav>
+    </div>
+    <div id="search-form">
+      <div id="result-mask" class="hide"></div>
+      <label><input id="search-key" type="text" autocomplete="off" placeholder="search"></label>
+      <div id="result-wrap" class="hide">
+        <div id="search-result"></div>
+      </div>
+      <div class="hide">
+        <template id="search-tpl">
+          <div class="item">
+            <a href="/{path}" title="{title}">
+              <div class="title">{title}</div>
+              <div class="time">{date}</div>
+              <div class="tags">{tags}</div>
+            </a>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-Activiti6工作流Api文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Activiti6工作流Api文档
+    </h1>
+  
+
+
+      </header>
+    
+    <div class="article-meta">
+      
+      <span class="article-date">
+  <i class="fa fa-date"></i>
+  <time class="dt-published" datetime="2022-07-06T11:48:55.000Z" itemprop="datePublished">2022年07月06日</time>
+</span>
+      
+      
+        <span class="article-views">
+  <i class="fa fa-views"></i>
+  <i id="busuanzi_container_page_pv">
+      <i id="busuanzi_value_page_pv"></i>
+  </i>
+</span>
+
+      
+      
+<a href="/2022/07/06/Activiti6%E5%B7%A5%E4%BD%9C%E6%B5%81Api%E6%96%87%E6%A1%A3/#comments" class="article-comment-link">
+  
+    
+    
+    
+    
+    
+  
+  <i class="fa fa-commt"></i>
+  Guestbook
+</a>
+
+
+    </div>
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Activiti6工作流Api文档"><a href="#Activiti6工作流Api文档" class="headerlink" title="Activiti6工作流Api文档"></a>Activiti6工作流Api文档</h1><span id="more"></span>
+
+<p>1、activiti 核心api</p>
+<p><img src="file:////private/var/folders/m4/cdq8ymt567d_pnlb0620n4_40000gn/T/com.kingsoft.wpsoffice.mac/wps-junhu/ksohtml//wps5.png" alt="img"> </p>
+<p>1.1  流程存储服务 (RepositoryService)</p>
+<p>​    •  管理流程定义文件xml及静态资源服务</p>
+<p>​    •  对流程定义文件对暂停激活</p>
+<p>​    •  流程定义启动权限管理</p>
+<p>​    •  部署文件构造器DeploymentBuilder</p>
+<p>​    •  部署文件查询器DeploymentQuery</p>
+<p>​    •  流程定义文件查询对象ProcessDefinitionQuery</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+<th>库表字段</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>repositoryService.createDeployment().addClasspathResource(“参 数”) .deploy()</td>
+<td>部署流程</td>
+<td>resources文件下面的xml流程文件</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>2</td>
+<td>repositoryService.createDeploymentQuery().list()</td>
+<td>查询所有部署</td>
+<td>省略</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>3</td>
+<td>repositoryService.createProcessDefinitionQuery().list()</td>
+<td>查询所有部署流程</td>
+<td>省略</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>4</td>
+<td>repositoryService.suspendProcessDefinitionById(id)或ByKey</td>
+<td>挂起流程</td>
+<td>根据流程id挂起流程</td>
+<td>修改表ACT_RE_PROCDEF字段SUSPENSION_STATE_:1激活 2挂起</td>
+</tr>
+<tr>
+<td>5</td>
+<td>repositoryService.activateProcessDefinitionById(id)或ByKey</td>
+<td>启动流程</td>
+<td>根据流程id激活流程</td>
+<td>修改表ACT_RE_PROCDEF字段SUSPENSION_STATE_:1激活 2挂起</td>
+</tr>
+<tr>
+<td>6</td>
+<td>repositoryService.addCandidateStarterUser(流程id,用户id)</td>
+<td>流程与用户对应关系</td>
+<td>添加流程与用户关系</td>
+<td>操作ACT_RU_IDENTITYLINK表</td>
+</tr>
+<tr>
+<td>7</td>
+<td>repositoryService.deleteCandidateStarterGroup(流程id,用户组id)</td>
+<td>流程与用户组对应关系</td>
+<td>添加流程与用户组关系</td>
+<td>操作ACT_RU_IDENTITYLINK表</td>
+</tr>
+<tr>
+<td>8</td>
+<td>repositoryService.deleteCandidateStarterUser(流程id,用户id)</td>
+<td>流程与用户对应关系</td>
+<td>删除流程与用户关系</td>
+<td>操作ACT_RU_IDENTITYLINK表</td>
+</tr>
+<tr>
+<td>9</td>
+<td>repositoryService.deleteCandidateStarterGroup(流程id,用户组id)</td>
+<td>流程与用户对应关系</td>
+<td>删除流程与用户组关系</td>
+<td>操作ACT_RU_IDENTITYLINK表</td>
+</tr>
+<tr>
+<td>10</td>
+<td>repositoryService.getIdentityLinksForProcessDefinition(流程id)</td>
+<td>查询流程对应关系</td>
+<td>查询流程对应用户跟组关系</td>
+<td>操作ACT_RU_IDENTITYLINK表</td>
+</tr>
+</tbody></table>
+<p>1.2 流程运行控制服务  (RuntimeService)</p>
+<p>​    •  启动流程及对流程数据对控制</p>
+<p>​    •  流程实例(ProcessInstance)与执行流(Execution)查询</p>
+<p>​    •  触发流程操作、接收消息和信号</p>
+<p>1.3 RuntimeService启动流程变量管理</p>
+<p>​    •  启动流程的常用方式(id,key,message)</p>
+<p>​    •  启动流程可选参数(businesskey,variables,tenantId)</p>
+<p>​    •  变量(variables)的设置和获取</p>
+<p>1.4  流程实例与执行流</p>
+<p>​    •  流程实例(ProcessInstance)表示一次工作流业务的数据实体</p>
+<p>​    •  执行流(Execution)表示流程实例中具体的执行路径</p>
+<p>​    •  流程实例接口继承与执行流</p>
+<p>1.5  流程触发</p>
+<p>​    •  使用trigger触发ReceiveTask节点</p>
+<p>​    •  触发信号捕获事件signalEvenReceived</p>
+<p>​    •  触发消息捕获事件messageEventReceived</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>runtimeService.startProcessInstanceByKey(String processDefinitionKey, Map&lt;String, Object&gt; variables)</td>
+<td>根据部署流程key启动一个流程</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>2</td>
+<td>runtimeService.startProcessInstanceById(String processDefinitionId, Map&lt;String, Object&gt; variables)</td>
+<td>根据部署流程id启动一个流程</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>3</td>
+<td>runtimeService.createProcessInstanceBuilder().businessKey(“businessKey001”) .processDefinitionKey(String processDefinitionKey).variables( Map&lt;String, Object&gt; variables) .start()</td>
+<td>根据processInstanceBuilder启动流程</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>4</td>
+<td>runtimeService.getVariables(processInstance.getId())</td>
+<td>根据流程实例id获取传参</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>5</td>
+<td>runtimeService.setVariable(processInstance.getId(),”key3”,”value3”)</td>
+<td>新增或修改参数</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>6</td>
+<td>runtimeService.createProcessInstanceQuery().processInstanceId(processInstance.getId())</td>
+<td>查询流程实例</td>
+<td>根据流程id获取流程实例</td>
+</tr>
+<tr>
+<td>7</td>
+<td>runtimeService.createExecutionQuery()</td>
+<td>获取流程执行对象</td>
+<td>省略</td>
+</tr>
+</tbody></table>
+<p>1.4  任务管理服务</p>
+<ul>
+<li>TaskService<ul>
+<li>对用户任务(UserTask)管理和流程控制</li>
+<li> 设置用户任务(UserTask)对权限信息(拥有者,候选人,办理人)</li>
+<li>针对用户任务添加任务附件、任务；评价和事件记录</li>
+</ul>
+</li>
+<li>TaskService对Task管理与流程控制<ul>
+<li>Task对象对创建,删除</li>
+<li>查询Task,并驱动Task节点完成执行</li>
+<li>Task相关参数变量(variable)设置</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>taskService.createTaskQuery().list()</td>
+<td>查询所有任务</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>2</td>
+<td>taskService.setVariable(“任务id”,”键”,”值”)</td>
+<td>设置普通变量</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>3</td>
+<td>taskService.setVariableLocal(“任务id”,”键”,”值”)</td>
+<td>设置本地变量</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>4</td>
+<td>taskService.getVariables(“任务id”)</td>
+<td>获取普通变量</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>5</td>
+<td>runtimeService.getVariables(task.getExecutionId())</td>
+<td>获取本地变量</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>6</td>
+<td>taskService.complete(“任务id”,”传值Map”)</td>
+<td>到下一个节点</td>
+<td>省略</td>
+</tr>
+</tbody></table>
+<ul>
+<li>TaskService设置Task权限信息<ul>
+<li><a target="_blank" rel="noopener" href="https://blog.51cto.com/u_3423936/2771360">https://blog.51cto.com/u_3423936/2771360</a></li>
+<li>指定拥有人(Owner)和办理人(Assignee)</li>
+<li>通过claim设置办理人</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>taskService.setOwner(“taskId”,”user”)</td>
+<td>设置流程发起人</td>
+<td>省略</td>
+</tr>
+<tr>
+<td>2</td>
+<td>taskService.claim(“”taskId””,”user”)</td>
+<td>指定代办人</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>taskService.addCandidateUser(“user”)</td>
+<td>添加候选人</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>taskService.addCandidateGroup(“group”)</td>
+<td>添加候选组</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>taskService.createTaskQuery().taskCandidateUser(“user”).taskUnassigned().list()</td>
+<td>查询候选人列表有user但是没指定代办人任务</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>taskService.createTaskQuery().taskCandidateUser(“user”).taskUnassigned().list()</td>
+<td>查询候选人列表有我但是没指定代办人任务</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>taskService.createTaskQuery().taskAssignee(“user”).list()</td>
+<td>查询代办人为user的任务</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>taskService.getIdentityLinksForTask(“taskId”)</td>
+<td>查询任务与人员之间的关系</td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li>TaskService设置Task附加信息<ul>
+<li>任务附件(Attachment)创建与查询</li>
+<li>任务评价(Comment)创建与查询</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>taskService.createAttachment(“类型”,”任务id”,”流程Id”,”附件名称”,”附件描述”,”流或者url)</td>
+<td>上传附件</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>taskService.getTaskAttachments(“任务id”)</td>
+<td>上传附件</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>taskService.addComment(“任务id”,”流程id”,”批注1”)</td>
+<td>添加审批批注</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>taskService.getTaskComments(“任务id”)</td>
+<td>查询审批批注</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>taskService.getTaskEvents(“任务id”)</td>
+<td>查询任务日志记录</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>1.5 身份管理服务</p>
+<ul>
+<li>IdentityService<ul>
+<li>管理用户(User)</li>
+<li>管理用户组(Group)</li>
+<li>用户与用户组关系(Membership)</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td>identityService.newUser(“userid”)</td>
+<td>创建一个用户</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>identityService.newGroup(“groupid”)</td>
+<td>创建一个组</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>identityService.saveUser(user)</td>
+<td>保存或者更新用户</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>identityService.saveGroup(group)</td>
+<td>保存或者更新组</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>identityService.createUserQuery()</td>
+<td>查询用户</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>identityService.createGroupQuery()</td>
+<td>查询组</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>1.6 表单服务管理</p>
+<ul>
+<li>FormService<ul>
+<li>解析流程定义中表单项的配置</li>
+<li>提交表单的方式驱动用户节点流转</li>
+<li>获取自定义外部表单key</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>formService.getStartFormKey(processDefinition.getId())</td>
+<td>部署流程的id获取表单key</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>formService.getStartFormData(processDefinition.getId()).getFormProperties()</td>
+<td>获取开始节点表单内容</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>formService.getStartFormData(processDefinition.getId()).getFormProperties()</td>
+<td>获取开始节点表单内容</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>formService.submitStartFormData(processDefinition.getId(), “传值参数”)</td>
+<td>通过formservice启动流程</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>formService.submitTaskFormData(“taskId”,”传参数”)</td>
+<td>通过formservice提交task表单</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>formService.getTaskFormData(“taskId”)</td>
+<td>通过taskid获取task节点表单内容</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>1.7  历史管理服务</p>
+<ul>
+<li>HistoryService<ul>
+<li>管理流程实例结束后的历史数据</li>
+<li>构建历史数据查询对象</li>
+<li>根据流程实例id删除流程历史数据</li>
+</ul>
+</li>
+</ul>
+<p><img src="file:////private/var/folders/m4/cdq8ymt567d_pnlb0620n4_40000gn/T/com.kingsoft.wpsoffice.mac/wps-junhu/ksohtml//wps6.png" alt="img"> </p>
+<ul>
+<li><p>HistoryService构建历史查询对象</p>
+<ul>
+<li>create[历史数据实体]Query</li>
+<li>createNative[历史数据实体]Query | 通过原生sql查询</li>
+<li>createProcessInstanceHistoryLogQuery | 查询一个流程实例的所有其他数据</li>
+</ul>
+</li>
+<li><p>HistoryService删除历史操作</p>
+<ul>
+<li>deleteHistoricProcessInstance | 删除历史流程实例及联删除其他信息</li>
+<li>deleteHistoricTaskInstance | 删除历史的task实例</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>historyService.createHistoricProcessInstanceQuery()</td>
+<td>查询流程实例变量</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>historyService.createHistoricActivityInstanceQuery()</td>
+<td>查询活动节点</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>historyService.createHistoricTaskInstanceQuery()</td>
+<td>查询任务实例</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>historyService.createHistoricVariableInstanceQuery()</td>
+<td>查询流程任务变量</td>
+<td></td>
+</tr>
+<tr>
+<td>5</td>
+<td>historyService.createHistoricDetailQuery()</td>
+<td>历史任务流程活动详细信息</td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>historyService.createProcessInstanceHistoryLogQuery(“流程实例id”)</td>
+<td>查询一个流程实例的所有其他数据</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>historyService.deleteHistoricProcessInstance(“流程实例id”)</td>
+<td>删除历史流程实例</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>historyService.deleteHistoricTaskInstance(“taskid”)</td>
+<td>删除历史任务</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>1.8 其他管理服务</p>
+<ul>
+<li><p>其他管理服务</p>
+<ul>
+<li>管理服务ManagementService</li>
+<li>动态流程定义服务DynamicBpmnService</li>
+</ul>
+</li>
+<li><p>ManagementService</p>
+<ul>
+<li>job任务管理</li>
+<li>数据库相关通用操作</li>
+<li>执行流程引擎命令(Command)</li>
+</ul>
+</li>
+<li><p>Job任务查询</p>
+<ul>
+<li>JobQuery 查询一般工作</li>
+<li>TimerJobQuery 查询定时工作</li>
+<li>SuspendedJobQuery 查询中断工作</li>
+<li>DeadLetterJobQuery 查询无法执行的工作</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>managementService.createTimerJobQuery(</td>
+<td>查询定时任务</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>managementService.createJobQuery()</td>
+<td>查询一般工作</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>managementService.createSuspendedJobQuery()</td>
+<td>查询中断工作</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>managementService.createDeadLetterJobQuery()</td>
+<td>查询无法执行的工作</td>
+<td></td>
+</tr>
+</tbody></table>
+<ul>
+<li>数据库相关操作<ul>
+<li>查询表结构元数据(TableMetaData)</li>
+<li>通用查询(TablePageQuery)</li>
+<li>执行自定义Sql查询(executeCustomSql)</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>方法</th>
+<th>含义</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>managementService.createTablePageQuery().tableName(managementService.getTableName(class))</td>
+<td>查询实体到所有数据</td>
+<td></td>
+</tr>
+<tr>
+<td>2</td>
+<td>managementService.executeCustomSql()</td>
+<td>自定义sql查询</td>
+<td></td>
+</tr>
+</tbody></table>
+<p>1.9 异常策略</p>
+<ul>
+<li>ActivitiEXception<ul>
+<li>ActivitiWrongDbException 引擎与数据库版本不匹配</li>
+<li>ActivitiOptimisticLockingException 并发导致乐观锁异常</li>
+<li>ActivitiClassLoadingException 加载类异常</li>
+<li>ActivitiObjectNotFoundException 操作对象不存在</li>
+<li>ActivitilllegalArgumentException 非法的参数</li>
+<li>ActivitiTaskAlreadyClaimedException 任务被重新声明代理人</li>
+<li>BpmnError 定义业务异常控制流程</li>
+</ul>
+</li>
+</ul>
+
+        
+            <div id="toc-article">
+                
+  <div class="widget-wrap" id="toc-wrap">
+    <h3 class="widget-title"><i class="fa fa-toc"></i> Contents</h3>
+    <div class="widget">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Activiti6%E5%B7%A5%E4%BD%9C%E6%B5%81Api%E6%96%87%E6%A1%A3"><span class="toc-text">Activiti6工作流Api文档</span></a></li></ol>
+    </div>
+  </div>
+
+
+            </div>
+        
+        
+          <blockquote id="copyright">
+              <p>Original link: <a href="http://example.com/2022/07/06/Activiti6工作流Api文档/">http://example.com/2022/07/06/Activiti6工作流Api文档/</a></p>
+              <p>Copyright Notice: 转载请注明出处.</p>
+          </blockquote>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+        <div class="article-tag-wrap">
+          
+
+          
+          
+    <div class="social-share">
+      <span>Share:</span>
+    </div>
+
+
+
+        </div>
+      
+      
+        
+<nav id="article-nav">
+  
+    <a href="/2022/07/06/Vue%E7%9A%84%E7%A9%BA%E6%A0%BC%E8%A1%A8%E7%A4%BA/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">older</strong>
+      <div class="article-nav-title">
+        
+          Vue的空格表示
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/07/06/Activiti6%E8%A1%A8%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">newer</strong>
+      <div class="article-nav-title">
+        
+          Activiti6表结构说明
+        
+      </div>
+    </a>
+  
+</nav>
+
+      
+      
+        
+
+
+
+
+
+
+
+
+      
+    </footer>
+  </div>
+</article>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-posts"></i> Recent</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2022/07/06/Activiti6%E8%A1%A8%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E/">Activiti6表结构说明</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/06/Activiti6%E5%B7%A5%E4%BD%9C%E6%B5%81Api%E6%96%87%E6%A1%A3/">Activiti6工作流Api文档</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/06/Vue%E7%9A%84%E7%A9%BA%E6%A0%BC%E8%A1%A8%E7%A4%BA/">Vue的空格表示</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/06/MySQL%E5%87%BD%E6%95%B0/">NySQL函数</a>
+          </li>
+        
+          <li>
+            <a href="/2022/07/06/Xml%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/">Xml转义字符</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+  
+    
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-archive"></i> Archive</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/">2022年</a><span class="archive-list-count">9</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title"><i class="fa fa-link"></i> Blogroll</h3>
+    <div class="widget">
+      <ul>
+      
+        <li>
+          <a target="_blank" rel="noopener" href="http://www.example1.com/">site-name1</a>
+        </li>
+      
+        <li>
+          <a target="_blank" rel="noopener" href="http://www.example2.com/">site-name2</a>
+        </li>
+      
+        <li>
+          <a target="_blank" rel="noopener" href="http://www.example3.com/">site-name3</a>
+        </li>
+      
+      </ul>
+    </div>
+  </div>
+
+
+  
+</aside>
+        
+      </div>
+      <a id="totop" href="#top"></a>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <p>
+        <a href="/sitemap.xml">Site Map</a>
+        <span> | </span><a href="/atom.xml">Subscribe to this site</a>
+        <span> | </span><a href="/about/">Contact the blogger</a>
+      </p>
+      
+        <p>
+          <i class="fa fa-visitors"></i>
+          <i id="busuanzi_container_site_uv"><i id="busuanzi_value_site_uv"></i></i>
+          ，
+          <i class="fa fa-views"></i>
+          <i id="busuanzi_container_site_pv"><i id="busuanzi_value_site_pv"></i></i>
+        </p>
+      
+      <p>
+        <span>Copyright &copy; 2022 JunHu.</span>
+        <span>Theme by <a href="https://github.com/chaooo/hexo-theme-BlueLake/" target="_blank">BlueLake.</a></span>
+        <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo.</a></span>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    </div>
+  </div>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/search.json.js"></script>
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+
+  
+<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+    
+<script src="/localshare/js/social-share.js"></script>
+
+    
+<script src="/localshare/js/qrcode.js"></script>
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+</body>
+</html>
