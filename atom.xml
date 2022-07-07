@@ -3,11 +3,11 @@
   <title>JunHu Blog</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://armytigers.github.io/my-hexo-blog/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://armytigers.github.io/my-hexo-blog/"/>
   <updated>2022-07-06T11:54:36.574Z</updated>
-  <id>http://example.com/</id>
+  <id>https://armytigers.github.io/my-hexo-blog/</id>
   
   <author>
     <name>JunHu</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Activiti6表结构说明</title>
-    <link href="http://example.com/2022/07/06/Activiti6%E8%A1%A8%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E/"/>
-    <id>http://example.com/2022/07/06/Activiti6%E8%A1%A8%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E/</id>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/06/Activiti6%E8%A1%A8%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/06/Activiti6%E8%A1%A8%E7%BB%93%E6%9E%84%E8%AF%B4%E6%98%8E/</id>
     <published>2022-07-06T11:50:00.000Z</published>
     <updated>2022-07-06T11:54:36.574Z</updated>
     
@@ -35,8 +35,8 @@
   
   <entry>
     <title>Activiti6工作流Api文档</title>
-    <link href="http://example.com/2022/07/06/Activiti6%E5%B7%A5%E4%BD%9C%E6%B5%81Api%E6%96%87%E6%A1%A3/"/>
-    <id>http://example.com/2022/07/06/Activiti6%E5%B7%A5%E4%BD%9C%E6%B5%81Api%E6%96%87%E6%A1%A3/</id>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/06/Activiti6%E5%B7%A5%E4%BD%9C%E6%B5%81Api%E6%96%87%E6%A1%A3/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/06/Activiti6%E5%B7%A5%E4%BD%9C%E6%B5%81Api%E6%96%87%E6%A1%A3/</id>
     <published>2022-07-06T11:48:55.000Z</published>
     <updated>2022-07-06T11:55:41.154Z</updated>
     
@@ -52,8 +52,8 @@
   
   <entry>
     <title>Vue的空格表示</title>
-    <link href="http://example.com/2022/07/06/Vue%E7%9A%84%E7%A9%BA%E6%A0%BC%E8%A1%A8%E7%A4%BA/"/>
-    <id>http://example.com/2022/07/06/Vue%E7%9A%84%E7%A9%BA%E6%A0%BC%E8%A1%A8%E7%A4%BA/</id>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/06/Vue%E7%9A%84%E7%A9%BA%E6%A0%BC%E8%A1%A8%E7%A4%BA/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/06/Vue%E7%9A%84%E7%A9%BA%E6%A0%BC%E8%A1%A8%E7%A4%BA/</id>
     <published>2022-07-06T06:11:37.000Z</published>
     <updated>2022-07-06T11:58:11.880Z</updated>
     
@@ -71,8 +71,8 @@
   
   <entry>
     <title>NySQL函数</title>
-    <link href="http://example.com/2022/07/06/MySQL%E5%87%BD%E6%95%B0/"/>
-    <id>http://example.com/2022/07/06/MySQL%E5%87%BD%E6%95%B0/</id>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/06/MySQL%E5%87%BD%E6%95%B0/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/06/MySQL%E5%87%BD%E6%95%B0/</id>
     <published>2022-07-06T05:45:31.000Z</published>
     <updated>2022-07-06T11:58:06.771Z</updated>
     
@@ -89,8 +89,8 @@
   
   <entry>
     <title>Xml转义字符</title>
-    <link href="http://example.com/2022/07/06/Xml%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/"/>
-    <id>http://example.com/2022/07/06/Xml%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/</id>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/06/Xml%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/06/Xml%E8%BD%AC%E4%B9%89%E5%AD%97%E7%AC%A6/</id>
     <published>2022-07-06T05:44:17.000Z</published>
     <updated>2022-07-06T11:58:15.998Z</updated>
     
@@ -106,8 +106,8 @@
   
   <entry>
     <title>Mac安装软件</title>
-    <link href="http://example.com/2022/07/06/Mac%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/"/>
-    <id>http://example.com/2022/07/06/Mac%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</id>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/06/Mac%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/06/Mac%E5%AE%89%E8%A3%85%E8%BD%AF%E4%BB%B6/</id>
     <published>2022-07-06T05:39:54.000Z</published>
     <updated>2022-07-06T05:41:28.551Z</updated>
     
@@ -127,8 +127,8 @@
   
   <entry>
     <title>Mac终端设置代理</title>
-    <link href="http://example.com/2022/07/06/Mac%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/"/>
-    <id>http://example.com/2022/07/06/Mac%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</id>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/06/Mac%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/06/Mac%E7%BB%88%E7%AB%AF%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%90%86/</id>
     <published>2022-07-06T05:39:00.000Z</published>
     <updated>2022-07-06T11:58:00.848Z</updated>
     
@@ -147,8 +147,8 @@
   
   <entry>
     <title>双网卡实现内外网同时访问</title>
-    <link href="http://example.com/2022/07/06/%E5%8F%8C%E7%BD%91%E5%8D%A1%E5%AE%9E%E7%8E%B0%E5%86%85%E5%A4%96%E7%BD%91%E5%90%8C%E6%97%B6%E8%AE%BF%E9%97%AE/"/>
-    <id>http://example.com/2022/07/06/%E5%8F%8C%E7%BD%91%E5%8D%A1%E5%AE%9E%E7%8E%B0%E5%86%85%E5%A4%96%E7%BD%91%E5%90%8C%E6%97%B6%E8%AE%BF%E9%97%AE/</id>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/06/%E5%8F%8C%E7%BD%91%E5%8D%A1%E5%AE%9E%E7%8E%B0%E5%86%85%E5%A4%96%E7%BD%91%E5%90%8C%E6%97%B6%E8%AE%BF%E9%97%AE/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/06/%E5%8F%8C%E7%BD%91%E5%8D%A1%E5%AE%9E%E7%8E%B0%E5%86%85%E5%A4%96%E7%BD%91%E5%90%8C%E6%97%B6%E8%AE%BF%E9%97%AE/</id>
     <published>2022-07-06T05:36:46.000Z</published>
     <updated>2022-07-06T11:59:41.791Z</updated>
     
@@ -171,8 +171,8 @@ route delete 网关。
   
   <entry>
     <title>Linux目录挂载</title>
-    <link href="http://example.com/2022/07/06/Linux%E7%9B%AE%E5%BD%95%E6%8C%82%E8%BD%BD/"/>
-    <id>http://example.com/2022/07/06/Linux%E7%9B%AE%E5%BD%95%E6%8C%82%E8%BD%BD/</id>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/06/Linux%E7%9B%AE%E5%BD%95%E6%8C%82%E8%BD%BD/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/06/Linux%E7%9B%AE%E5%BD%95%E6%8C%82%E8%BD%BD/</id>
     <published>2022-07-06T05:33:03.000Z</published>
     <updated>2022-07-06T11:57:54.102Z</updated>
     
