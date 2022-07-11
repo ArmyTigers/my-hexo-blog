@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://armytigers.github.io/my-hexo-blog/2022/07/11/Mac%E6%B7%BB%E5%8A%A0%E6%B0%B8%E4%B9%85%E8%B7%AF%E7%94%B1/</loc>
+    
+    <lastmod>2022-07-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://armytigers.github.io/my-hexo-blog/about/index.html</loc>
     
     <lastmod>2022-07-06</lastmod>
@@ -94,7 +103,7 @@
 
   <url>
     <loc>https://armytigers.github.io/my-hexo-blog</loc>
-    <lastmod>2022-07-07</lastmod>
+    <lastmod>2022-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
