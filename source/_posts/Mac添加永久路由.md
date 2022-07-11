@@ -5,6 +5,8 @@ tags:
 ---
 
 # Mac添加永久路由
+
+<!-- more -->
 ## 查看网卡名称列表
     networksetup -listallnetworkservices
 
