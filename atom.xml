@@ -6,7 +6,7 @@
   <link href="https://armytigers.github.io/my-hexo-blog/atom.xml" rel="self"/>
   
   <link href="https://armytigers.github.io/my-hexo-blog/"/>
-  <updated>2022-07-11T01:52:22.100Z</updated>
+  <updated>2022-07-11T02:01:56.527Z</updated>
   <id>https://armytigers.github.io/my-hexo-blog/</id>
   
   <author>
@@ -21,15 +21,12 @@
     <link href="https://armytigers.github.io/my-hexo-blog/2022/07/11/Mac%E6%B7%BB%E5%8A%A0%E6%B0%B8%E4%B9%85%E8%B7%AF%E7%94%B1/"/>
     <id>https://armytigers.github.io/my-hexo-blog/2022/07/11/Mac%E6%B7%BB%E5%8A%A0%E6%B0%B8%E4%B9%85%E8%B7%AF%E7%94%B1/</id>
     <published>2022-07-11T01:39:23.000Z</published>
-    <updated>2022-07-11T01:52:22.100Z</updated>
+    <updated>2022-07-11T02:01:56.527Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Mac添加永久路由"><a href="#Mac添加永久路由" class="headerlink" title="Mac添加永久路由"></a>Mac添加永久路由</h1><h2 id="查看网卡名称列表"><a href="#查看网卡名称列表" class="headerlink" title="查看网卡名称列表"></a>查看网卡名称列表</h2><pre><code>networksetup -listallnetworkservices</code></pre><h2 id="指定网卡名称添加路由"><a href="#指定网卡名称添加路由" class="headerlink" title="指定网卡名称添加路由"></a>指定网卡名称添加路由</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">networksetup -setadditionalroutes &quot;Wi-Fi&quot; 10.123.0.0 255.255.0.0 10.0.0.1</span><br><span class="line">networksetup -setadditionalroutes &#x27;USB 10/100 LAN&#x27; 10.123.0.0 255.255.0.0 10.0.0.1</span><br><span class="line">//也可以添加多条路由</span><br><span class="line">networksetup -setadditionalroutes &quot;Wi-Fi&quot; 172.11.0.0 255.255.255.0 172.16.198.1 192.160.0.0 255.255.255.0 172.16.198.1</span><br><span class="line">//注意：上面相当于添加了两条路由</span><br><span class="line">172.11.0.0/24 都从172.16.198.1</span><br><span class="line">192.160.0.0/24 都从172.16.198.1</span><br></pre></td></tr></table></figure><h2 id="查看添加的路由"><a href="#查看添加的路由" class="headerlink" title="查看添加的路由"></a>查看添加的路由</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">networksetup -getadditionalroutes Wi-Fi</span><br></pre></td></tr></table></figure><h2 id="清空路由表"><a href="#清空路由表" class="headerlink" title="清空路由表"></a>清空路由表</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">networksetup -setadditionalroutes Wi-Fi</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="Mac添加永久路由"><a href="#Mac添加永久路由" class="headerlink" title="Mac添加永久路由"></a>Mac添加永久路由</h1><span id="more"></span><h2 id="查看网卡名称列表"><a href="#查看网卡名称列表" class="headerlink" title="查看网卡名称列表"></a>查看网卡名称列表</h2><pre><code>networksetup -listallnetworkservices</code></pre><h2 id="指定网卡名称添加路由"><a href="#指定网卡名称添加路由" class="headerlink" title="指定网卡名称添加路由"></a>指定网卡名称添加路由</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">networksetup -setadditionalroutes &quot;Wi-Fi&quot; 10.123.0.0 255.255.0.0 10.0.0.1</span><br><span class="line">networksetup -setadditionalroutes &#x27;USB 10/100 LAN&#x27; 10.123.0.0 255.255.0.0 10.0.0.1</span><br><span class="line">//也可以添加多条路由</span><br><span class="line">networksetup -setadditionalroutes &quot;Wi-Fi&quot; 172.11.0.0 255.255.255.0 172.16.198.1 192.160.0.0 255.255.255.0 172.16.198.1</span><br><span class="line">//注意：上面相当于添加了两条路由</span><br><span class="line">172.11.0.0/24 都从172.16.198.1</span><br><span class="line">192.160.0.0/24 都从172.16.198.1</span><br></pre></td></tr></table></figure><h2 id="查看添加的路由"><a href="#查看添加的路由" class="headerlink" title="查看添加的路由"></a>查看添加的路由</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">networksetup -getadditionalroutes Wi-Fi</span><br></pre></td></tr></table></figure><h2 id="清空路由表"><a href="#清空路由表" class="headerlink" title="清空路由表"></a>清空路由表</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">networksetup -setadditionalroutes Wi-Fi</span><br></pre></td></tr></table></figure>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Mac添加永久路由&quot;&gt;&lt;a href=&quot;#Mac添加永久路由&quot; class=&quot;headerlink&quot; title=&quot;Mac添加永久路由&quot;&gt;&lt;/a&gt;Mac添加永久路由&lt;/h1&gt;&lt;h2 id=&quot;查看网卡名称列表&quot;&gt;&lt;a href=&quot;#查看网卡名称列表&quot; class=&quot;</summary>
-      
+    <summary type="html">&lt;h1 id=&quot;Mac添加永久路由&quot;&gt;&lt;a href=&quot;#Mac添加永久路由&quot; class=&quot;headerlink&quot; title=&quot;Mac添加永久路由&quot;&gt;&lt;/a&gt;Mac添加永久路由&lt;/h1&gt;</summary>
     
     
     
