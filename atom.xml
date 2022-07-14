@@ -6,7 +6,7 @@
   <link href="https://armytigers.github.io/my-hexo-blog/atom.xml" rel="self"/>
   
   <link href="https://armytigers.github.io/my-hexo-blog/"/>
-  <updated>2022-07-11T02:01:56.527Z</updated>
+  <updated>2022-07-14T04:01:30.171Z</updated>
   <id>https://armytigers.github.io/my-hexo-blog/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git切换远程库</title>
+    <link href="https://armytigers.github.io/my-hexo-blog/2022/07/14/git%E5%88%87%E6%8D%A2%E8%BF%9C%E7%A8%8B%E5%BA%93/"/>
+    <id>https://armytigers.github.io/my-hexo-blog/2022/07/14/git%E5%88%87%E6%8D%A2%E8%BF%9C%E7%A8%8B%E5%BA%93/</id>
+    <published>2022-07-14T03:52:46.000Z</published>
+    <updated>2022-07-14T04:01:30.171Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="git-切换远程库命令"><a href="#git-切换远程库命令" class="headerlink" title="git 切换远程库命令"></a>git 切换远程库命令</h1><ol><li>查看远程仓库地址<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li></ol><span id="more"></span><ol start="2"><li>删除本地远程仓库地址<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote rm origin </span><br></pre></td></tr></table></figure></li><li>添加远程仓库地址<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://****.git</span><br></pre></td></tr></table></figure></li><li>查看远程仓库地址<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote -v</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;git-切换远程库命令&quot;&gt;&lt;a href=&quot;#git-切换远程库命令&quot; class=&quot;headerlink&quot; title=&quot;git 切换远程库命令&quot;&gt;&lt;/a&gt;git 切换远程库命令&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;查看远程仓库地址&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git remote -v&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Mac添加永久路由</title>
